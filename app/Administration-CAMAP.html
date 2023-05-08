@@ -1,0 +1,289 @@
+<!--
+title: Administration de CAMAP
+description: Documentation à l'usage des administrateurs de groupe CAMAP
+published: true
+date: 2023-05-05T16:05:25.833Z
+tags: 
+editor: ckeditor
+dateCreated: 2023-05-05T14:48:56.426Z
+-->
+
+<h1><strong>Le mode AMAP</strong></h1>
+<p>Le mode AMAP anciennement disponible sur cagette.net est désormais hébergé sur CAMAP.&nbsp;</p>
+<p>Vous retrouverez toute la documentation utile concernant ce mode ici.</p>
+<p>Pour comprendre le mode AMAP, il vous faut :</p>
+<ul>
+  <li>comprendre le paramétrage d'un <a href="/app/Administration-CAMAP#contrats-amap-classiques">contrat classique</a></li>
+  <li>comprendre le paramétrage d'un <a href="/app/Administration-CAMAP#les-contrats-amap-variables">contrat variable</a></li>
+  <li>comprendre la <a href="/app/Administration-CAMAP#gestion-des-absences-en-amap">gestion des absences</a></li>
+  <li>comprendre la <a href="/app/Administration-CAMAP#gestion-des-stocks-en-amap">gestion des stocks</a> spécifiques aux AMAP</li>
+</ul>
+<p>Ensuite, vous pouvez découvrir quelques cas pratiques au travers <a href="https://wiki.cagette.net/webinaires">des webinaires</a> réalisés par Alilo (développeur initial du projet) sur le sujet.</p>
+<h1><strong>Contrats AMAP classiques</strong></h1>
+<h2><strong>Tutoriel pas à pas :</strong></h2>
+<figure class="media">
+  <oembed url="https://player.vimeo.com/video/419958190"></oembed>
+</figure>
+<h2><strong>Création d'un contrat</strong></h2>
+<p>Créez le contrat dans votre groupe Camap depuis l'onglet “Catalogues” en cliquant sur le bouton “Créer ou trouver un catalogue”.</p>
+<p>Planifiez vos distributions pour toute l'année depuis l'onglet “Distributions”</p>
+<p>Dans la gestion du contrat, page “Distribution”, assurez vous que le producteur participe au bon nombre de distributions au fil de l'année.</p>
+<p>Pour gagner du temps, vous pouvez proposer aux adhérents de pré-saisir leur commande sur Camap Pour n'aurez ensuite qu'à vous assurer que cette personne a bien signé le contrat papier et payé.</p>
+<p>Pour activer cette option : Modifiez le catalogue et cochez “Les membres peuvent saisir leur commande en ligne”. Nous vous recommandons de laisser cette case cochée uniquement en période de renouvellement des contrats, pour vous éviter de tout saisir vous même.</p>
+<h3><strong>Champs "Délai minimum pour saisir une souscription"</strong></h3>
+<p>Ce champs définit le délai minimum en heure pour saisir une souscription. Par exemple, si ce délai est à 24h, vous ne pourrez pas saisir de souscription qui intégre une distribution qui a lieu dans moins de 24h.</p>
+<p>Ceci permet d'éviter que des souscriptions soient saisies trop tard et que le producteur n'aie pas le temps de préparer la commande.</p>
+<h2><strong>Souscriptions au contrat</strong></h2>
+<p>Schéma expliquant le principe général des souscriptions avec l'exemple d'un contrat Légumes :</p>
+<figure class="image"><img src="https://wiki.cagette.net/_media/admin:shema_souscription_amap.png?w=600&amp;tok=0a348a" alt="  Schéma expliquant le principe des souscriptions"></figure>
+<p>Les <i>souscriptions</i> aux contrats apparaissent dans le menu “souscription” du contrat concerné. Vous pouvez les marquer comme payées une fois que l'adhérent vous a donné le contrat papier ainsi que tous les chèques correspondants à sa souscription.</p>
+<p>Attention, une fois que vous aurez dit que la souscription est payée, il ne sera plus possible d'ajouter ou de supprimer des distributions. C'est normal puisque les adhérents se seront engagés sur un planning pré-défini et un nombre de distributions. Vous pourrez éventuellement décaler une distribution si jamais le producteur a un souci en cours d'année.</p>
+<p>Il est fortement conseillé de régler la question du paiement des souscriptions avant la première distribution. Soyez rigoureux ! Camap ne vous empêchera pas de le faire, mais vous enverra un mail si jamais des distributions ont lieu alors que des souscriptions ne sont pas payées.</p>
+<p>En cas d'abandon de contrat en cours d'année (déménagement…) vous pourrez clore la souscription de manière anticipée en modifiant sa date de fin.</p>
+<p>Vous pouvez également créer des souscriptions en cours d'année, qui ne couvriront donc que les futures distributions.</p>
+<h2><strong>Souscription en alternance</strong></h2>
+<p>Il arrive régulièrement qu'un AMAPien souscrive à un produit (panier de légumes par exemple) en alternance avec un autre AMAPien. Le premier récupère alors la commande en semaine paire par exemple, et le deuxième en semaine impaire.</p>
+<p>Il est possible de formaliser un tel fonctionnement dans Camap. C'est au coordinateur du contrat de paramétrer cela sur la souscription de l'AMAPien de référence. Attention, celle-ci ne doit pas être validée.</p>
+<figure class="image"><img src="https://wiki.cagette.net/_media/admin:screenshot_2020-05-22_cagette_net_preprod_3_.png?w=800&amp;tok=3c8e79" alt=""></figure>
+<p>En allant sur le bouton “Gérer” puis “Modifier”, vous disposerez de la possibilité de spécifier le nom d'un autre AMAPien en alternance. Il est alors possible de cocher “Inverser l'alternance” en fonction du choix des amapiens. S'il s'agit de prendre un panier par semaine en alternance, indiquez bien “1” panier en commande. Le montant total des commandes sera à partager dans la réalité.</p>
+<figure class="image"><img src="https://wiki.cagette.net/_media/admin:screenshot_2020-05-22_cagette_net_preprod_4_.png?w=800&amp;tok=c13287" alt=""></figure>
+<p>Pour l'AMAPien, l'ordre est visible sur la page “Commandes”, comme présenté dans l'exemple suivant. Y est indiqué sur la date de distribution quand est-ce que c'est son tour ou celui de l'autre amapien.</p>
+<figure class="image"><img src="https://wiki.cagette.net/_media/admin:screenshot_2020-05-22_cagette_net_preprod_5_.png?w=800&amp;tok=aae59e" alt=""></figure>
+<h2><strong>Gestion des stocks</strong></h2>
+<p>Il est possible d'activer la gestion des stocks pour un contrat AMAP classique. Cela permet de définir le <strong>stock disponible par distribution</strong> pour un produit donné. Le producteur peut ainsi s'assurer qu'il ne sera pas commandé plus de produits que ce qu'il peut produire.</p>
+<h2><strong>Absences</strong></h2>
+<p>Les contrats AMAP classiques peuvent bénéficier de la gestion des absences. <a href="/app/Administration-CAMAP#gestion-des-absences-en-amap">Plus de détails ici</a>.</p>
+<h1><strong>Les Contrats AMAP variables</strong></h1>
+<p>Comme le contrat AMAP classique, le contrat AMAP variable fonctionne avec un système de souscriptions. L'amapien s'engage à commander une certaine quantité de produits en signant un contrat avec le producteur.</p>
+<p>Contrairement aux contrats AMAP classiques, il est possible de faire varier sa commande au fil des distributions.</p>
+<p>L'engagement des amapiens se configure grâce aux options listées ci-dessous.</p>
+<h2><strong>Ouverture et fermeture de commande</strong></h2>
+<p>Vous pouvez définir des délais d'ouverture et de fermeture de commande pour les commandes AMAP variables. Deux méthodes sont possibles :</p>
+<ul>
+  <li>via les paramètres du catalogue, pour fixer un temps récurrent avant la distribution</li>
+</ul>
+<p>Attention, le premier champs (ouverture) est en jours avant la date de distribution, et le second (fermeture) en heures avant la date de distribution.</p>
+<ul>
+  <li>via l'onglet Distributions, pour fixer des dates spécifiques d'ouverture et de fermeture à chaque distribution</li>
+</ul>
+<p><i>Important :</i> Lorsque vous changez les valeurs de ces deux champs, cela va mettre à jour toutes les distributions futures pour y appliquer ces délais de commande. Si vous aviez personnalisé une date d'ouverture ou de fermeture de commande, cette personnalisation sera perdue.</p>
+<p>Les dates d'ouverture/fermeture de commande peuvent être personnalisées par distribution via le bouton “dates” dans l'onglet “Distributions”, ou dans la page “distributions” du catalogue ( onglet “catalogues” ), toujours avec le bouton “dates”.</p>
+<h2><strong>Engagements</strong></h2>
+<p>Vous pouvez choisir l'une des 2 options ci-dessous. Il est également possible d'activer les 2 options sur un même contrat.</p>
+<h3><strong>Option "Minimum de commande par distribution"</strong></h3>
+<p>Définissez un montant minimum de dépense par distribution dans les propriétés du contrat. La commande devient donc obligatoire pour chaque distribution.</p>
+<p>Lorsque l'amapien saisi sa souscription, il doit définir sa commande par défaut. Cette commande sera enregistrée pour toutes les dates de distribution du contrat.</p>
+<p>L'amapien peut ensuite moduler sa commande date par date, tant que les commandes sont ouvertes et que le minimum requis est atteint.</p>
+<p>Si jamais aucune commande n'est enregistrée pour une distribution, la commande par défaut s'appliquera automatiquement.</p>
+<p>Cette option permet d'activer <a href="https://wiki.cagette.net/admin:absences">la gestion des absences</a>.</p>
+<h3><strong>Option "Minimum de commandes sur la durée du contrat"</strong></h3>
+<p>Définissez un montant minimum que l'amapien doit dépenser en tout sur toute la durée du contrat. Les commandes peuvent être prises librement, tant que le montant total est supérieur ou égal au minimum requis.</p>
+<p>La commande n'est donc plus obligatoire à chaque distribution, ce qui fait qu'il n'y a pas de commande par défaut, ni de gestion des absences.</p>
+<p>Le coordinateur de contrat doit vérifier qu'il y a suffisament de distributions ouvertes à la commande pour permettre à l'amapien d'atteindre le minimum de commande facilement.</p>
+<p><i>Attention</i>, si la souscription ne s'étale pas sur toute la durée normale du contrat, le montant minimum sera calculé au pro-rata du nombre de distributions réelles de la souscription.</p>
+<h1><strong>Gestion des absences en AMAP</strong></h1>
+<p>Pour chaque contrat, le coordinateur peut définir une plage de temps pendant laquelle les amapiens pourront être absent, ainsi qu'un nombre maximum d'absences autorisées. Les amapiens n'auront donc pas de commande enregistrée pour ces jours d'absence, c'est une sorte de “joker” qui permet d'organiser ses vacances plus facilement !</p>
+<p><strong>* Contrats AMAP classiques </strong>: la gestion des absences est présente par défaut sur la gestion du contrat, onglet à gauche</p>
+<p><strong>* Contrats AMAP variables </strong>: la gestion des absences n'est disponible que lorsque l'option “Minimum de commande par distribution” est activée dans les paramètres du catalogue ( minimum supérieur à zéro ).</p>
+<p>Si cette option n'est pas activée, cela veut dire que la commande n'est pas obligatoire à chaque distribution, il n'y a donc pas lieu de gérer des absences.</p>
+<p>Lorsque l'amapien saisira sa souscription au contrat, il pourra choisir le nombre de distributions pour lesquelles ils sera absent ( entre zéro et le maximum autorisé ). Attention, une fois la souscription créée, il ne pourra plus modifier le nombre de jour d'absence et devra demander à un coordinateur de contrat si il souhaite faire une modification.</p>
+<p>La date limite pour modifier ses absences est la date de fermeture des commandes pour cette distribution.</p>
+<h1><strong>Gestion des Stocks en AMAP</strong></h1>
+<p>A l'origine, le système de stock de Cagette permet de gérer des stocks de produits au fil du temps, semaine par semaine.</p>
+<p>Dans le cas des AMAP, les commandes sont faites longtemps en avance, donc la gestion de stock classique ne convient pas.</p>
+<p>Cependant, en AMAP il est courant de vouloir définir une quantité maximum de produit commandable par distribution.</p>
+<p>Voilà pourquoi nous avons adapté la gestion des stocks à ce fonctionnement : activez la gestion des stocks dans les paramètres du contrat.</p>
+<p>Vous pourrez ensuite définir un “stock par distribution” pour chaque produit.</p>
+<p>Cela crééra un stock global équivalent à StockParDistribution x NbreDeDistributions. Celà n'est pas parfait puisque cela pose une limite globale et pas strictement “par distribution”, mais ça peut aider à limiter les commandes des Amapiens.</p>
+<h1><strong>Gérer les produits</strong></h1>
+<h2><strong>Créer de nouveaux produits</strong></h2>
+<p>Lorsque vous créez un nouveau catalogue, il faut saisir les produits qui seront disponibles dans ce catalogue. La liste de produits est rattachée à ce catalogue uniquement. Si la liste de produits change trop souvent, il peut être plus pratique de créer un nouveau catalogue qui aura sa nouvelle liste de produits.</p>
+<p>Pour créer vos nouveaux produits, vous avez deux options :</p>
+<ul>
+  <li>Faire une importation à partir d'un tableur (<i>Excel, Libre Office</i>)</li>
+  <li>Saisir manuellement les produits</li>
+</ul>
+<h3><strong>Importation tableur</strong></h3>
+<p>Aller dans “catalogues”, puis “produits”, puis “import CSV” en bas de page.</p>
+<p>Télécharger le fichier de démonstration afin de bien repérer dans quel ordre sont les colonnes.</p>
+<p>Modifiez votre fichier selon ce modèle, vérifiez bien les paramètres à l'export CSV et vous pourrez importer vos produits d'un seul coup.</p>
+<p>Malheureusement l'import de photos n'est pas automatisable, il faut envoyer les photos des produits une par une.</p>
+<h3><strong>Saisie manuelle</strong></h3>
+<p>Vous pouvez également saisir les produits manuellement en cliquant sur “nouveau produit” dans la page produits d'un catalogue.</p>
+<p><strong>Nom</strong> : Le nom du produit, pas trop long</p>
+<p><strong>Référence</strong> : c'est optionnel, mais c'est pratique si vous gérez un gros catalogue de produits, potentiellement via un autre logiciel.</p>
+<p><strong>prix TTC</strong></p>
+<p><strong>description</strong> : quelques mots sur le produit afin d'informer vos adhérents.</p>
+<p><strong>stock</strong> : optionnel, voir <a href="/app/Administration-CAMAP#gestion-des-stocks-en-amap">Gérer des stocks de produits</a></p>
+<p><strong>type</strong> : Si vous n'avez pas de photo, vous pouvez choisir une icône</p>
+<p><strong>TVA</strong> : Choisissez un taux de TVA, en France les produits alimentaires sont vendus à un taux de 5,5% en général. Attention certains produits alimentaires peuvent avoir un taux de TVA à 20% (consultez votre producteur ou référez vous au site <a href="https://entreprendre.service-public.fr/vosdroits/F22399">service-public.fr</a>).</p>
+<h3><strong>Photos</strong></h3>
+<p>Une fois votre liste de produits constituée vous pouvez ajouter des photos à ces produits.</p>
+<p>Cliquez sur le bouton “photo” de chaque produit et vous pourrez importer une photo.</p>
+<p>Soyez patients quand vous valider votre envoi de photo, cela peut prendre quelques secondes car le logiciel va “retailler” l'image pour un affichage optimal. Un format d'image carré est recommandé.</p>
+<h3><strong>Stocks</strong></h3>
+<p><a href="/app/Administration-CAMAP#gestion-des-stocks-en-amap">Gestion des stocks</a></p>
+<h1><strong>Vente au kilo, produits à peser</strong></h1>
+<p>Certains produits n'ont pas de prix fixe et fonctionnent selon une logique de prix au Kilo.</p>
+<p><strong>La vente “comme au marché”</strong> : on commande 1 poulet, mais son poids, et donc son prix peuvent varier selon la pesée. Il en va de même avec le fromage à la coupe, ou les caissettes de viande.</p>
+<p><strong>La vente en vrac</strong> : farine, pâtes ou céréales peuvent être vendues en vrac. L'adhérent peut commander une quantité libre : par exemple 1,5kg. Les récapitulatifs sont affichés en Kg.</p>
+<h2><strong>Structure d'un produit</strong></h2>
+<p>Afin de faire de la vente au kilo, vous devez bien définir votre produit :</p>
+<ul>
+  <li>son nom</li>
+  <li>l'unité de mesure ( kilos, grammes ou litres )</li>
+  <li>sa quantité (exprimée dans l'unité de mesure)</li>
+  <li>le prix</li>
+</ul>
+<p>Par exemple :</p>
+<ul>
+  <li>“Poulet”</li>
+  <li>Kg</li>
+  <li>1,4</li>
+  <li>14 €</li>
+</ul>
+<p>Pour un poulet qui pèse environ 1,4Kg vendu 14€ TTC.</p>
+<p>Vous noterez que Camap déduit le prix au kilo à partir de ces indications.</p>
+<h2><strong>Options de produit à cocher</strong></h2>
+<h3><strong>Option "Prix variable selon pesée"</strong></h3>
+<p>Cette option va afficher une icône “balance” et indiquer aux adhérents que ce produit sera pesé à la distribution et que son prix sera ajusté à ce moment là.</p>
+<figure class="image"><img src="https://wiki.cagette.net/_media/admin:prixvariableselonpesee.png?w=600&amp;tok=dfdc50" alt=""></figure>
+<p>Cette option va également permettre de mettre à jour la commande d'un adhérent en fonction du poids du produit : aller dans Catalogues / bouton Gérer de votre catalogue / Commandes / choisir date de commande / bouton “modifier”</p>
+<figure class="image"><img src="https://wiki.cagette.net/_media/admin:smartqt.png" alt=""></figure>
+<h3><strong>Option "multi-pesée"</strong></h3>
+<p>Par défaut, Camap agrège les produits sur une seule ligne quand le même produit est commandé plusieurs fois. Par exemple : “4 x Pot de confiture”.</p>
+<p>Cependant, lorsque vous pesez deux poulets pour le même client, vous ne souhaitez pas avoir au final “3,2 kg de poulet” affiché, mais plutôt savoir combien pèse chaque poulet séparément.</p>
+<p>L'option multi-pesée permet donc d'avoir une ligne par produit, afin de pouvoir facilement voir ou modifier le poids de chacun de ces produits.</p>
+<h3><strong>Option "Vrac"</strong></h3>
+<p>L'option Vrac est adapté pour les produits en vrac où il est demandé au consommateur de venir avec son contenant.&nbsp;</p>
+<p>Comme pour le prix variable selon pesée, l'option Vrac permet une modification a posteriori du poids disponible.</p>
+<h1><strong>Les listes d'émargement en AMAP</strong></h1>
+<p>Des listes d'émargement spécifiques au fonctionnement des AMAP ont été introduites sur Cagette à compter du 17 novembre 2021. Il existe deux types de liste correspondant au contrat AMAP classique et au contrat AMAP variable.</p>
+<h2><strong>Y accéder</strong></h2>
+<p>Pour accéder à une liste d'émargement, quel que soit le type de contrat, le chemin à suivre est :</p>
+<ul>
+  <li>Aller sur la page Catalogues du Groupe</li>
+  <li>Cliquer sur le bouton “Gérer” du catalogue</li>
+  <li>Aller sur l'onglet “Commandes” situé sur le menu de gauche</li>
+  <li>Cliquer sur le bouton “Commandes” de n'importe quelle date à venir pour les contrats classiques, et sur la date souhaitée pour les contrats variables</li>
+  <li>Cliquer sur le bouton “Liste d'émargement”</li>
+</ul>
+<figure class="image"><img src="https://wiki.cagette.net/_media/admin:screenshot_2021-11-17_at_12-19-37_cagette_net.png?w=700&amp;tok=b95054" alt=""></figure>
+<h2><strong>Paramétrer une liste d'émargement d'un contrat classique</strong></h2>
+<p>L'intérêt premier de la liste d'émargement d'un contrat classique est d'afficher sur une seule page un récapitulatif pour une période d'engagement et choisi, et non une seule distribution. Pour cela, vous disposez d'un générateur de liste permettant de jouer sur plusieurs critères :</p>
+<ul>
+  <li><strong>le format des contacts</strong> : il permet de séparer ou non les noms des AMAPiens et leur téléphone</li>
+  <li><strong>le format des produits</strong> : il permet d'afficher l'ensemble des produits commandés dans une seule colonne, ou créer une colonne par produit commandé, et indiquant le nombre d'unités commandés dans la case correspondante.</li>
+  <li><strong>le format des dates</strong> : Pour afficher si nécessaire l'année ou non, dès lors que le contrat s'étale sur une longue période.</li>
+  <li><strong>la hauteur des cellules</strong> : elle permet d'avoir une hauteur suffisante pour faire une croix, ou une plus grande pour réaliser une signature.</li>
+</ul>
+<p>Vous disposez d'un aperçu en dessous du générateur pour visualiser les changements opérés, ainsi que de la possibilité d'exporter le fichier en format csv ou tableur. De cette manière, vous pouvez ajouter vos propres notes complémentaires sur le document à imprimer.</p>
+<figure class="image"><img src="https://wiki.cagette.net/_media/admin:screenshot_2021-11-17_at_12-24-18_cagette_net.png?w=600&amp;tok=614a59" alt=""></figure>
+<h2><strong>Paramétrer une liste d'émargement d'un contrat variable</strong></h2>
+<p>Pour les commandes variables, il n'est pas possible de réaliser un récapitulatif comprenant plusieurs dates puisque les produits sont variables d'une distribution à l'autre. Le générateur permet quant à lui de modifier la hauteur des cellules et la place des contacts pour optimiser l'espace et donc l'impression de la liste.</p>
+<h1><strong>La gestion des paiements en AMAP</strong></h1>
+<p>Comme présenté dans la charte AMAP, un principe prévaut pour la gestion des paiements en AMAP : le paiement à l'avance. En effet, l'engagement de l'AMAPien se traduit par le prépaiement du contrat le liant au producteur, dans le but de favoriser un revenu stable et connu pour ce dernier. Ce prépaiement se matérialise généralement par la réalisation de un ou plusieurs chèques correspondant à l'ensemble des commandes prises sur une saison.</p>
+<p>Sur Camap, cette démarche est intégrée à l'outil depuis décembre 2020. En se rendant sur la page Souscriptions d'un contrat, le coordinateur dispose de deux possibilités sur l'onglet “Souscriptions” du contrat le concernant :</p>
+<figure class="image"><img src="https://wiki.cagette.net/_media/admin:paiement_amap-2cas.png" alt=""></figure>
+<h3><strong>1 - Mettre à jour les paiements transmis pour un membre</strong></h3>
+<p>Il est possible au gré du temps d'intégrer un nouveau paiement pour un seul amapien en passant via le bouton “Gérer” associé à son nom, sur l'onglet Souscriptions du contrat concerné.</p>
+<figure class="image"><img src="https://wiki.cagette.net/_media/admin:paiement_individuel_amap.jpg?w=600&amp;tok=3323ee" alt=""></figure>
+<h3><strong>2 - Mettre à jour les paiements en masse</strong></h3>
+<p>Il est aussi fréquent que de nombreux chèques associés à un contrat arrivent à un moment donné. Pour cela, Cagette propose un outil de saisie en masse des paiements, via le bouton “Saisie de paiements en masse”.</p>
+<figure class="image"><img src="https://wiki.cagette.net/_media/admin:paiement_en_masse_amap.jpg?w=600&amp;tok=ee43c6" alt=""></figure>
+<h1><strong>Définir le lieu de distribution</strong></h1>
+<p>La définition du lieu de distribution se réalise au moment de la création de votre groupe. Vous pouvez cependant modifier le lieu de distribution choisi sur la page Paramètres du groupe, onglet “Lieu de distribution” sur le menu de gauche.</p>
+<figure class="image"><img src="https://wiki.cagette.net/_media/admin:lieu_de_distribution.png" alt=""></figure>
+<h1><strong>Apparaitre sur la carte des groupes Camap</strong></h1>
+<p>Voici la liste des choses à vérifier pour apparaitre sur la carte des groupes Camap.</p>
+<ul>
+  <li>Vous devez avoir une distribution dans les 6 mois ( ou dans les 14 derniers jours )</li>
+  <li>Au moins un producteur doit participer à cette distribution : assurez-vous sur l'onglet “Distributions” qu'un producteur est invité à la distribution programmée</li>
+  <li>Vous devez avoir plus de 3 membres dans le groupe</li>
+  <li>Vos lieux de livraisons doivent être géolocalisés ( est ce que “latitude” et “longitude” sont remplis quand vous modifiez votre lieu de livraison ? )</li>
+</ul>
+<p><strong>Important</strong> : visitez votre page publique (adresse URL disponible dans les paramètres) pour que Camap re-vérifie tous ces paramètres</p>
+<h3><strong>Donc, je n'apparaîtrai pas sur la carte...</strong></h3>
+<p>Si le nombre de producteur présent sur la date de distribution est de 0, comme dans cet exemple :</p>
+<figure class="image"><img src="https://wiki.cagette.net/_media/admin:distribution_et_carte.png?w=400&amp;tok=cf3d8f" alt=""></figure>
+<h2><strong>Je n'apparais pas au bon endroit sur la carte, que faire?</strong></h2>
+<p>Il arrive parfois que le point soit bien présent sur la carte mais ne se retrouve pas au bon endroit, suite à un géocodage non fonctionnel.</p>
+<p>Vous pouvez dans ce cas là <strong>changer manuellement la longitude et latitude du point</strong> lorsque vous définissez le lieu de distribution. La modification du lieu de distribution se fait sur la page Paramètres, onglet Lieu de distribution dans le menu de gauche.</p>
+<p>Vous pouvez vous rendre par exemple sur un site comme Google Maps et vous rendre à la bonne adresse. En faisant un seul clic à côté du point qui vous intéresse sur la carte, celle-ci affiche en bas les coordonnées GPS à rentrer à la place des latitude et longitude indiquée sur le lieu de distribution.</p>
+<h1><strong>Les récapitulatifs</strong></h1>
+<p>Les commandes peuvent être récapitulées dans différents types de rapports :</p>
+<ul>
+  <li><strong>Le rapport par produit</strong> : Pour le producteur en général, il totalise le nombre de produits commandés</li>
+  <li><strong>Le rapport par adhérent</strong> : Rassemble les commandes pour chaque adhérent</li>
+</ul>
+<h2><strong>Récapitulatif par produits</strong></h2>
+<h3><strong>Par produit, par producteur pour une distribution donnée</strong></h3>
+<p>Aller dans le contrat, page “commandes”, et cliquez sur le bouton “récapitulatif par produits”. Vous pourrez récupérer ces données sous deux autres formes : bon de commande à imprimer, ou fichier CSV pour récupérer les données dans un tableur.</p>
+<h3><strong>Par produit, par producteur de date à date</strong></h3>
+<p>Passez par le bouton “vue globale des commandes” sur la page contrat, puis “de date à date”</p>
+<h2><strong>Récapitulatif par adhérent</strong></h2>
+<h3><strong>Par adhérent, par producteur pour une distribution donnée</strong></h3>
+<p>Aller dans le contrat, visitez la page “commandes”. Vous pourrez récupérer ces données sous deux autres formes : liste d'émargement à imprimer, ou fichier CSV pour récupérer les données dans un tableur.</p>
+<h3><strong>Par adhérent, tout producteurs confondus pour une date donnée</strong></h3>
+<p>Passez par le bouton “vue globale des commandes” sur la page contrat, puis sélectionnez la date de distribution concernée et le lieu de livraison.</p>
+<p>Vous pourrez récupérer ces données sous deux autres formes : liste d'émargement à imprimer, ou fichier CSV pour récupérer les données dans un tableur.</p>
+<h1><strong>Les Distributions</strong></h1>
+<p>L'onglet “distributions” permet d'organiser les distributions d'un point de vue global dans votre groupe. Seuls l'administrateur et les personnes ayant le droit “Gestion de tous les catalogues” peuvent y accéder.</p>
+<p><strong>En tant qu'administrateur de groupe, c'est à vous de planifier toutes les distributions pour toute la saison.</strong> Les producteurs et coordinateurs de catalogues/contrats pourront choisir de s'y rattacher ou pas.</p>
+<figure class="image"><img src="https://wiki.cagette.net/_media/admin:distributions2.png" alt=""></figure>
+<p>Ce tableau de bord vous permet d'avoir les informations clé d'un seul coup d’œil :</p>
+<p><strong>Statut de la commande</strong> : Est ce que la commande est ouverte ou fermée ? ( applicable aux commandes variables uniquement )</p>
+<p><strong>Catalogues participants</strong> Le bouton “Catalogues participants” permet d'avoir le détail des producteurs et des catalogues impliqués dans cette distribution. Il est précisé aussi si un de ces producteurs a défini une fermeture de commande ou ouverture de commande différente de la distribution principale.</p>
+<p><strong>Permanences</strong> : vérifier si on a suffisamment de bénévoles inscrits aux permanences. Cocher les rôles à pourvoir ou modifier la liste des inscrits.</p>
+<p><strong>Commandes</strong> : Nombre de commandes et total de commande</p>
+<h2><strong>Comment créer des distributions</strong></h2>
+<p><i><u>Si on est administrateur du groupe :</u></i></p>
+<p>Dans l'onglet “Distributions”, vous pouvez créer des distributions ponctuelles (une par une) ou des cycles de distributions ( cela va créer une série de distributions ).</p>
+<p>Une fois vos distributions créées, vous verrez le bouton “Ajouter des catalogues à la distribution”. Vous pouvez ainsi sélectionner quels producteurs participent à la distribution.</p>
+<p><i><u>Si on est coordinateur de contrat/catalogue :</u></i></p>
+<p>Vous ne pouvez pas créer de distribution à proprement parler, puisque seul l'administrateur peut le faire.</p>
+<p>Aller dans l'onglet “catalogues”, et cliquer sur “gérer” pour le catalogue concerné. Dans la page “distributions”, vous verrez toutes les dates de distribution planifiées par l'administrateur. Vous pouvez cliquer sur “participer” pour choisir à quelles dates le producteur participera.</p>
+<h2><strong>Comment modifier des distributions</strong></h2>
+<p>Si vous souhaitez modifier les jours/horaires <strong>d'une seule distribution</strong>, vous pouvez cliquer sur les trois points en haut à droite de celle-ci, et choisir Modifier.</p>
+<p>Si vous souhaitez modifier <strong>tout un cycle de distribution</strong>, vous devez cliquer sur “Cycles de distributions”, puis “Modifier” sur le cycle concerné, afin de renseigner les nouvelles données.</p>
+<h2><strong>Comment supprimer des distributions</strong></h2>
+<p><i><u>Si on est administrateur du groupe :</u></i></p>
+<p>Dans l'onglet “Distributions”, cliquer sur “catalogues participants” sur la distribution concernée. Vous pouvez cliquer sur “ne participe plus” pour tous les catalogues que vous souhaitez retirer de cette distribution.</p>
+<p>Une fois que vous arrivez à zéro catalogues participants, vous pouvez éventuellement supprimer la distribution ( Trois petits points en haut à droite de la distribution et Supprimer ).</p>
+<p>Vous pouvez également supprimer tout un cycle de distribution en cliquant sur “Cycle de distribution” et “Supprimer”.</p>
+<p><i><u>Si on est coordinateur de contrat/catalogue :</u></i></p>
+<p>Aller dans l'onglet “catalogues”, et cliquer sur “gérer” pour le catalogue concerné. Dans la page “distributions”, vous verrez toutes les dates de distribution planifiées par l'administrateur. Vous pouvez cliquer sur “ne plus participer” pour annuler la participation de ce producteur à cette distribution. Notez que Camap peut refuser d'annuler la participation si il y a des commandes enregistrées pour ce producteur à cette date.</p>
+<h2><strong>Comment customiser la date d'ouverture et fermeture de commande pour un producteur</strong></h2>
+<p>Lorsque vous créez une distribution, vous spécifiez une heure d'ouverture et de fermeture de commande. Cependant il arrive que certains producteurs aient besoin d'avoir des délais de commande spécifiques. Vous pouvez donc customiser la date d'ouverture et de fermeture de commande uniquement pour ce producteur.</p>
+<p><i><u>Si on est administrateur du groupe :</u></i></p>
+<p>Dans l'onglet “Distributions”, cliquez sur “producteurs participants” sur la distribution concernée. Cliquez sur “changer dates” pour le producteur concerné.</p>
+<p><i><u>Si on est coordinateur de contrat/catalogue :</u></i></p>
+<p>Allez sur la page “distributions” du catalogue concerné. Cliquez sur le bouton “dates” pour la distribution concernée.</p>
+<h1><strong>Les permanences</strong></h1>
+<p>“Etre de permanence” veut dire que l'on va participer au bon déroulement d'une distribution en remplissant un certain rôle. En général les permanences sont réparties équitablement entre les membres du groupe.</p>
+<h2><strong>Les rôles de bénévoles</strong></h2>
+<p>Camap gère une liste de rôles à remplir par les adhérents lors des distributions.</p>
+<p>Il existe des rôles génériques, comme par exemple : “Accueil des nouveaux”, “gestion des adhésions” , “installation de la salle” …</p>
+<p>Il existe des rôles liés à un catalogue/contrat, comme pas exemple : “permanence légumes”, “permanence oeuf”…</p>
+<p>Pour gérer cette liste de rôles, aller dans l'onglet “Paramètres”, cliquez sur “Permanences”. Si vous avez besoin de plusieurs personnes pour le même rôle, il faut créer autant de rôles que nécessaire. Par exemple, si vous avez besoin de deux personnes pour distribuer les paniers, créez ces rôles : “Distribution des paniers 1” et “Distribution des paniers 2”.</p>
+<p>Sur cette page, vous aurez également personnaliser les emails relatifs aux permanences, et régler les délais liés aux permanences : envoi de mail d'alerte, envoi du mail d'information aux bénévoles de permanence.</p>
+<p>Pour chaque distribution, vous devez choisir quels rôles sont à pourvoir en cliquant sur “Rôles de bénévoles” sur l'onglet “Distributions”</p>
+<figure class="image"><img src="https://wiki.cagette.net/_media/admin:roles.png?w=250&amp;tok=225e03" alt=" "></figure>
+<h2><strong>Le calendrier des permanences</strong></h2>
+<p>Sur la page d'accueil, chaque membre du groupe a la possibilité de s'inscrire aux prochaines permanences.</p>
+<p>Cagette lui indique combien de permanences il devrait faire au cours de l'année en calculant la réparition de manière équitable.</p>
+<figure class="image"><img src="https://wiki.cagette.net/_media/admin:calendrier_permanences.png?w=800&amp;tok=83296d" alt=" Le calendrier des permanences"></figure>
+<h2><strong>Participation aux permanences</strong></h2>
+<p>Depuis l'onglet “Distributions”, bouton “Permanences”, un administrateur peut voir le tableau général des participations aux permanences. Cela lui permettra d'avoir une vue d'ensemble de la participation des membres en fonction de ce qu'ils devraient faire.</p>
+<p>Camap part du principe que tous les adhérents doivent se répartir équitablement les rôles génériques, et que les rôles liés à un contrat sont répartis entre les adhérents impliqués dans ce contrat ( avec au moins une commande dans ce contrat )</p>
+<figure class="image"><img src="https://wiki.cagette.net/_media/admin:participation.png?w=600&amp;tok=428759" alt=""></figure>
+<h1><strong>Reporter une distribution</strong></h1>
+<p>Dans le cas d'un problème logistique ou toute autre difficulté, il est possible de reporter toutes les commandes d'un catalogue sur une distribution à une date ultérieure. La condition pour cela est de pouvoir la reporter à une date à laquelle aucune commande n'est encore enregistrée, pour ne pas entrer en conflit avec des commandes déjà passées.</p>
+<p>Vous devez pour cela vous rendre sur la page Catalogues, puis l'onglet “Gérer” de votre catalogue en question. Là, sur le bouton “distribution”, en cliquant sur l'onglet “Dates”, on vous propose de “Reporter la distribution”.</p>
+<figure class="image"><img src="https://wiki.cagette.net/_media/admin:screenshot_2020-06-30_cagette_net_2_.png?w=600&amp;tok=642c30" alt=""></figure>
+<p>La page suivante vous demandera de sélectionner une date à laquelle vous avez indiqué ne pas participer. Pensez donc à vous désinscrire d'une date ultérieure si c'est le cas, et qu'aucune commande n'a été enregistrée pour cette dernière.</p>
+<p>Attention : cette opération peut générer des doublons de numéro de commande.</p>
+<p>&nbsp;</p>
+<figure class="image image_resized" style="width:12.38%;"><img src="/by-sa.png">
+  <figcaption><a href="/home#le-wiki-camap">License</a></figcaption>
+</figure>
