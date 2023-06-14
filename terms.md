@@ -2,7 +2,7 @@
 title: Terms
 description: 
 published: true
-date: 2023-06-14T21:08:03.293Z
+date: 2023-06-14T21:09:00.482Z
 tags: 
 editor: markdown
 dateCreated: 2023-06-14T21:08:03.293Z
@@ -27,4 +27,4 @@ immatriculée sous le numéro 423 093 459 RCS PARIS
 **Crédits:** les mentions légales ont été générées et offertes par Subdelirium agence de Communication Angoulême
 
 ### Droit applicable et attribution de juridiction.
-Tout litige en relation avec l’utilisation du site feedback.amap44.org est soumis au droit français. Il est fait attribution exclusive de juridiction aux tribunaux compétents de Nantes(44).
+Tout litige en relation avec l’utilisation du site wiki.amap44.org est soumis au droit français. Il est fait attribution exclusive de juridiction aux tribunaux compétents de Nantes(44).
