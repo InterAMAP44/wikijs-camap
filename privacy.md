@@ -2,7 +2,7 @@
 title: Privacy Policy
 description: 
 published: true
-date: 2023-06-14T21:06:44.312Z
+date: 2023-06-14T21:10:46.400Z
 tags: 
 editor: markdown
 dateCreated: 2023-06-14T21:06:44.312Z
@@ -46,7 +46,7 @@ These third parties have access to your Personal Data only to perform these task
 ## Name Usage   Privacy Policy
 Cookies are small text files which are transferred to your browser from a website and stored on your device. We use browser cookies and similar technologies to recognize you when you return to our Service.
 
-We don't track you across the Internet. We only track your interactions within our network (which encompasses fider.io and custom domains hosted by us).
+We don't track you across the Internet. 
 
 Links To Other Web Sites
 Our Service may contain links to third-party web sites or services that are not owned or controlled by us.
