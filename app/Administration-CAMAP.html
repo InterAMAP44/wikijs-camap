@@ -2,7 +2,7 @@
 title: Administration de CAMAP
 description: Documentation à l'usage des administrateurs de groupe CAMAP
 published: true
-date: 2023-07-21T07:18:27.816Z
+date: 2023-07-21T07:22:25.643Z
 tags: 
 editor: ckeditor
 dateCreated: 2023-05-05T14:48:56.426Z
@@ -19,99 +19,6 @@ dateCreated: 2023-05-05T14:48:56.426Z
   <li>comprendre la <a href="/app/Administration-CAMAP#gestion-des-stocks-en-amap">gestion des stocks</a> spécifiques aux AMAP</li>
 </ul>
 <p>Ensuite, vous pouvez découvrir quelques cas pratiques au travers <a href="https://wiki.cagette.net/webinaires">des webinaires</a> réalisés par Alilo (développeur initial du projet) sur le sujet.</p>
-<h1><strong>Gestion des Stocks en AMAP</strong></h1>
-<p>A l'origine, le système de stock de Cagette permet de gérer des stocks de produits au fil du temps, semaine par semaine.</p>
-<p>Dans le cas des AMAP, les commandes sont faites longtemps en avance, donc la gestion de stock classique ne convient pas.</p>
-<p>Cependant, en AMAP il est courant de vouloir définir une quantité maximum de produit commandable par distribution.</p>
-<p>Voilà pourquoi nous avons adapté la gestion des stocks à ce fonctionnement : activez la gestion des stocks dans les paramètres du contrat.</p>
-<p>Vous pourrez ensuite définir un “stock par distribution” pour chaque produit.</p>
-<p>Cela crééra un stock global équivalent à StockParDistribution x NbreDeDistributions. Celà n'est pas parfait puisque cela pose une limite globale et pas strictement “par distribution”, mais ça peut aider à limiter les commandes des Amapiens.</p>
-<h1><strong>Gérer les produits</strong></h1>
-<h2><strong>Créer de nouveaux produits</strong></h2>
-<p>Lorsque vous créez un nouveau catalogue, il faut saisir les produits qui seront disponibles dans ce catalogue. La liste de produits est rattachée à ce catalogue uniquement. Si la liste de produits change trop souvent, il peut être plus pratique de créer un nouveau catalogue qui aura sa nouvelle liste de produits.</p>
-<p>Pour créer vos nouveaux produits, vous avez deux options :</p>
-<ul>
-  <li>Faire une importation à partir d'un tableur (<i>Excel, Libre Office</i>)</li>
-  <li>Saisir manuellement les produits</li>
-</ul>
-<h3><strong>Importation tableur</strong></h3>
-<p>Aller dans “catalogues”, puis “produits”, puis “import CSV” en bas de page.</p>
-<p>Télécharger le fichier de démonstration afin de bien repérer dans quel ordre sont les colonnes.</p>
-<p>Modifiez votre fichier selon ce modèle, vérifiez bien les paramètres à l'export CSV et vous pourrez importer vos produits d'un seul coup.</p>
-<p>Malheureusement l'import de photos n'est pas automatisable, il faut envoyer les photos des produits une par une.</p>
-<h3><strong>Saisie manuelle</strong></h3>
-<p>Vous pouvez également saisir les produits manuellement en cliquant sur “nouveau produit” dans la page produits d'un catalogue.</p>
-<p><strong>Nom</strong> : Le nom du produit, pas trop long</p>
-<p><strong>Référence</strong> : c'est optionnel, mais c'est pratique si vous gérez un gros catalogue de produits, potentiellement via un autre logiciel.</p>
-<p><strong>prix TTC</strong></p>
-<p><strong>description</strong> : quelques mots sur le produit afin d'informer vos adhérents.</p>
-<p><strong>stock</strong> : optionnel, voir <a href="/app/Administration-CAMAP#gestion-des-stocks-en-amap">Gérer des stocks de produits</a></p>
-<p><strong>type</strong> : Si vous n'avez pas de photo, vous pouvez choisir une icône</p>
-<p><strong>TVA</strong> : Choisissez un taux de TVA, en France les produits alimentaires sont vendus à un taux de 5,5% en général. Attention certains produits alimentaires peuvent avoir un taux de TVA à 20% (consultez votre producteur ou référez vous au site <a href="https://entreprendre.service-public.fr/vosdroits/F22399">service-public.fr</a>).</p>
-<h3><strong>Photos</strong></h3>
-<p>Une fois votre liste de produits constituée vous pouvez ajouter des photos à ces produits.</p>
-<p>Cliquez sur le bouton “photo” de chaque produit et vous pourrez importer une photo.</p>
-<p>Soyez patients quand vous valider votre envoi de photo, cela peut prendre quelques secondes car le logiciel va “retailler” l'image pour un affichage optimal. Un format d'image carré est recommandé.</p>
-<h3><strong>Stocks</strong></h3>
-<p><a href="/app/Administration-CAMAP#gestion-des-stocks-en-amap">Gestion des stocks</a></p>
-<h1><strong>Vente au kilo, produits à peser</strong></h1>
-<p>Certains produits n'ont pas de prix fixe et fonctionnent selon une logique de prix au Kilo.</p>
-<p><strong>La vente “comme au marché”</strong> : on commande 1 poulet, mais son poids, et donc son prix peuvent varier selon la pesée. Il en va de même avec le fromage à la coupe, ou les caissettes de viande.</p>
-<p><strong>La vente en vrac</strong> : farine, pâtes ou céréales peuvent être vendues en vrac. L'adhérent peut commander une quantité libre : par exemple 1,5kg. Les récapitulatifs sont affichés en Kg.</p>
-<h2><strong>Structure d'un produit</strong></h2>
-<p>Afin de faire de la vente au kilo, vous devez bien définir votre produit :</p>
-<ul>
-  <li>son nom</li>
-  <li>l'unité de mesure ( kilos, grammes ou litres )</li>
-  <li>sa quantité (exprimée dans l'unité de mesure)</li>
-  <li>le prix</li>
-</ul>
-<p>Par exemple :</p>
-<ul>
-  <li>“Poulet”</li>
-  <li>Kg</li>
-  <li>1,4</li>
-  <li>14 €</li>
-</ul>
-<p>Pour un poulet qui pèse environ 1,4Kg vendu 14€ TTC.</p>
-<p>Vous noterez que Camap déduit le prix au kilo à partir de ces indications.</p>
-<h2><strong>Options de produit à cocher</strong></h2>
-<h3><strong>Option "Prix variable selon pesée"</strong></h3>
-<p>Cette option va afficher une icône “balance” et indiquer aux adhérents que ce produit sera pesé à la distribution et que son prix sera ajusté à ce moment là.</p>
-<figure class="image"><img src="https://wiki.cagette.net/_media/admin:prixvariableselonpesee.png?w=600&amp;tok=dfdc50" alt=""></figure>
-<p>Cette option va également permettre de mettre à jour la commande d'un adhérent en fonction du poids du produit : aller dans Catalogues / bouton Gérer de votre catalogue / Commandes / choisir date de commande / bouton “modifier”</p>
-<figure class="image"><img src="https://wiki.cagette.net/_media/admin:smartqt.png" alt=""></figure>
-<h3><strong>Option "multi-pesée"</strong></h3>
-<p>Par défaut, Camap agrège les produits sur une seule ligne quand le même produit est commandé plusieurs fois. Par exemple : “4 x Pot de confiture”.</p>
-<p>Cependant, lorsque vous pesez deux poulets pour le même client, vous ne souhaitez pas avoir au final “3,2 kg de poulet” affiché, mais plutôt savoir combien pèse chaque poulet séparément.</p>
-<p>L'option multi-pesée permet donc d'avoir une ligne par produit, afin de pouvoir facilement voir ou modifier le poids de chacun de ces produits.</p>
-<h3><strong>Option "Vrac"</strong></h3>
-<p>L'option Vrac est adapté pour les produits en vrac où il est demandé au consommateur de venir avec son contenant.&nbsp;</p>
-<p>Comme pour le prix variable selon pesée, l'option Vrac permet une modification a posteriori du poids disponible.</p>
-<h1><strong>Les listes d'émargement en AMAP</strong></h1>
-<p>Des listes d'émargement spécifiques au fonctionnement des AMAP ont été introduites sur Cagette à compter du 17 novembre 2021. Il existe deux types de liste correspondant au contrat AMAP classique et au contrat AMAP variable.</p>
-<h2><strong>Y accéder</strong></h2>
-<p>Pour accéder à une liste d'émargement, quel que soit le type de contrat, le chemin à suivre est :</p>
-<ul>
-  <li>Aller sur la page Catalogues du Groupe</li>
-  <li>Cliquer sur le bouton “Gérer” du catalogue</li>
-  <li>Aller sur l'onglet “Commandes” situé sur le menu de gauche</li>
-  <li>Cliquer sur le bouton “Commandes” de n'importe quelle date à venir pour les contrats classiques, et sur la date souhaitée pour les contrats variables</li>
-  <li>Cliquer sur le bouton “Liste d'émargement”</li>
-</ul>
-<figure class="image"><img src="https://wiki.cagette.net/_media/admin:screenshot_2021-11-17_at_12-19-37_cagette_net.png?w=700&amp;tok=b95054" alt=""></figure>
-<h2><strong>Paramétrer une liste d'émargement d'un contrat classique</strong></h2>
-<p>L'intérêt premier de la liste d'émargement d'un contrat classique est d'afficher sur une seule page un récapitulatif pour une période d'engagement et choisi, et non une seule distribution. Pour cela, vous disposez d'un générateur de liste permettant de jouer sur plusieurs critères :</p>
-<ul>
-  <li><strong>le format des contacts</strong> : il permet de séparer ou non les noms des AMAPiens et leur téléphone</li>
-  <li><strong>le format des produits</strong> : il permet d'afficher l'ensemble des produits commandés dans une seule colonne, ou créer une colonne par produit commandé, et indiquant le nombre d'unités commandés dans la case correspondante.</li>
-  <li><strong>le format des dates</strong> : Pour afficher si nécessaire l'année ou non, dès lors que le contrat s'étale sur une longue période.</li>
-  <li><strong>la hauteur des cellules</strong> : elle permet d'avoir une hauteur suffisante pour faire une croix, ou une plus grande pour réaliser une signature.</li>
-</ul>
-<p>Vous disposez d'un aperçu en dessous du générateur pour visualiser les changements opérés, ainsi que de la possibilité d'exporter le fichier en format csv ou tableur. De cette manière, vous pouvez ajouter vos propres notes complémentaires sur le document à imprimer.</p>
-<figure class="image"><img src="https://wiki.cagette.net/_media/admin:screenshot_2021-11-17_at_12-24-18_cagette_net.png?w=600&amp;tok=614a59" alt=""></figure>
-<h2><strong>Paramétrer une liste d'émargement d'un contrat variable</strong></h2>
-<p>Pour les commandes variables, il n'est pas possible de réaliser un récapitulatif comprenant plusieurs dates puisque les produits sont variables d'une distribution à l'autre. Le générateur permet quant à lui de modifier la hauteur des cellules et la place des contacts pour optimiser l'espace et donc l'impression de la liste.</p>
 <h1><strong>La gestion des paiements en AMAP</strong></h1>
 <p>Comme présenté dans la charte AMAP, un principe prévaut pour la gestion des paiements en AMAP : le paiement à l'avance. En effet, l'engagement de l'AMAPien se traduit par le prépaiement du contrat le liant au producteur, dans le but de favoriser un revenu stable et connu pour ce dernier. Ce prépaiement se matérialise généralement par la réalisation de un ou plusieurs chèques correspondant à l'ensemble des commandes prises sur une saison.</p>
 <p>Sur Camap, cette démarche est intégrée à l'outil depuis décembre 2020. En se rendant sur la page Souscriptions d'un contrat, le coordinateur dispose de deux possibilités sur l'onglet “Souscriptions” du contrat le concernant :</p>
