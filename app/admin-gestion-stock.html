@@ -2,7 +2,7 @@
 title: Gestion des Stocks
 description: 
 published: true
-date: 2023-08-15T23:29:51.508Z
+date: 2023-08-15T23:37:42.696Z
 tags: 
 editor: ckeditor
 dateCreated: 2023-07-21T07:16:21.869Z
@@ -20,7 +20,12 @@ dateCreated: 2023-07-21T07:16:21.869Z
 <p>La date de la distribution concernée s'affiche lorsque vous passez la souris sur l'icone d'information de la colonne “Stock”</p>
 <figure class="image image_resized" style="width:62.5%;"><img src="/stocks-information-date.png"></figure>
 <figure class="image image_resized" style="width:62.73%;"><img src="/stocks-affichage-produit.png"></figure>
-<p>Avant la version 1.0.2 de CAMAP, le stock affiché était calculé pour le contrat (stock affiché = stock produit * nombre de distributions du contrat). Ce fonctionnement créait beaucoup d'incohérence et était difficilement compréhensible. Ce n'est plus le cas.</p>
+<p>Quand le stock disponible est inférieur ou égal à 10, il s'affiche en rouge.</p>
+<figure class="image image_resized" style="width:62.1%;"><img src="/stocks-stock-faible.png"></figure>
+<p>Quand aucun stock n'est renseigné pour le produit, un “-” s'affiche au lieu de la quantité. Les commandes ne sont alors pas limitées pour ce produit même si la gestion des stocks est activée pour le catalogue.</p>
+<figure class="image image_resized" style="width:61.59%;"><img src="/stocks-non-renseigne.png"></figure>
+<p>&nbsp;</p>
+<p><i>NB: avant la version 1.0.2 de CAMAP, le stock affiché était calculé pour le contrat (stock affiché = stock produit * nombre de distributions du contrat). Ce fonctionnement créait beaucoup d'incohérence et était difficilement compréhensible. Ce n'est plus le cas.</i></p>
 <hr>
 <figure class="image image_resized" style="width:11.02%;"><img src="https://wiki.amap44.org/by-nc-sa.png"></figure>
 <p><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/%22">&nbsp;Licence Creative Commons Attribution - Pas d’Utilisation Commerciale - Partage dans les Mêmes Conditions 4.0 International</a></p>
