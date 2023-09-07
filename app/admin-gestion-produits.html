@@ -2,7 +2,7 @@
 title: Gestion des produits
 description: 
 published: true
-date: 2023-09-07T09:58:10.207Z
+date: 2023-09-07T14:40:15.136Z
 tags: 
 editor: ckeditor
 dateCreated: 2023-07-21T07:20:19.817Z
@@ -64,7 +64,12 @@ dateCreated: 2023-07-21T07:20:19.817Z
 <p>Cette option va également permettre de mettre à jour la commande d'un adhérent en fonction du poids du produit : aller dans Catalogues / bouton Gérer de votre catalogue / Commandes / choisir date de commande / bouton “modifier”</p>
 <figure class="image"><img src="https://wiki.cagette.net/_media/admin:smartqt.png" alt=""></figure>
 <h3><strong>Option "multi-pesée"</strong></h3>
-<p>Par défaut, Camap agrège les produits sur une seule ligne quand le même produit est commandé plusieurs fois. Par exemple : “ 2 x poulet poids moyen ”. Mais dans le cas d'un contrat AMAP variable volailles le coordinateur ou le producteur est amené à modifier le poids réel de chaque poulet, il faut activer cette option, sinon il faudra modifier la somme des poids des 2 poulets. &nbsp;</p>
+<p>Par défaut, Camap agrège les produits sur une seule ligne quand le même produit est commandé plusieurs fois. Par exemple : “ 2 x poulet poids moyen ”.&nbsp;<br>Mais <strong>dans le cas d'un contrat AMAP variable</strong> volailles le coordinateur où le producteur est amené à modifier le poids réel de chaque poulet après la distribution, il faut activer cette option, sinon il faudra modifier la somme des poids des 2 poulets. &nbsp;</p>
+<p>Dans le cas d'un <strong>contrat AMAP Classique</strong>, cette option n'est utile que si certains produits sont créés avec une unité autre que “pièce” et que vous ne souhaitez pas que Camap les additionne lors de commandes multiples.&nbsp;<br>Par exemple, si un produit “Pain d'épices” a été créé avec comme unité “grammes” et comme quantité “250”, en cas de commande de 2 pains d'épices:</p>
+<ul>
+  <li>si multipesée est coché, Camap affichera <u>une</u> commande de Pain d'épices et quantité <u>500g</u></li>
+  <li>si multipesée est décoché, Camap affichera <u>deux</u> commandes de Pain d'épices et quantité <u>250g</u></li>
+</ul>
 <p>&nbsp;</p>
 <h3><strong>Option "Vrac"</strong></h3>
 <p>L'option Vrac est adapté pour les produits en vrac où il est demandé au consommateur de venir avec son contenant. Comme pour le prix variable selon pesée, l'option Vrac permet une modification a posteriori du poids disponible.</p>
