@@ -2,7 +2,7 @@
 title: camap-docker
 description: Installation simplifiée de Camap
 published: true
-date: 2023-10-04T10:13:23.691Z
+date: 2023-10-04T10:18:05.437Z
 tags: 
 editor: markdown
 dateCreated: 2023-09-29T13:53:08.409Z
@@ -35,6 +35,62 @@ https://docs.docker.com/engine/install/debian/
 _Sur Windows_
 
 Installer [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+
+
+## Installation Linux Debian
+
+lancer
+`build_camap_docker.sh <DESTDIR>`
+
+pour une installation de Camap dans ```DESTDIR```
+
+Renseigner le DNS ou votre fichier hosts avec les valeurs correspondante à la configuration.
+Pour une installation en local:
+
+```127.0.0.1 camap.localdomain api.camap.localdomain```
+
+#### Modifier les lignes 3 à 7 de __camap-ts.Dockerfile__ dans $DESTDIR avec les valeurs indiquées dans __camap-ts/.env__
+
+
+
+## Installation sous Windows
+
+Installer docker desktop
+
+Créer un répertoire Camap
+
+Dans ce répertoire:
+
+- ```git clone https://github.com/CAMAP-APP/camap-hx.git```
+
+- ```git clone https://github.com/CAMAP-APP/camap-ts.git```
+
+- ```git clone https://github.com/CAMAP-APP/camap-docker.git```
+
+
+Copier ensuite depuis camap/camap-docker/:
+
+- ```traefik.yml``` dans ```camap```
+
+- ```*.Dockerfile``` dans ```camap```
+
+- ```docker-compose.yml``` dans ```camap```
+
+- ```.env``` dans ```camap/camap-ts```
+
+- ```config.xml``` dans ```camap/camap-hx```
+
+- le répertoire ```traefik``` et son contenu dans ```camap```
+
+- le répertoire ```ssl``` et son contenu dans ```camap```
+
+
+#### Modifier les lignes 3 à 7 de __camap-ts.Dockerfile__ dans Camap avec les valeurs indiquées dans __camap-ts/.env__
+
+Renseigner le DNS ou votre fichier hosts (c:\windows\system32\drivers\etc) avec les valeurs correspondante à la configuration.
+Pour une installation en local:
+
+```127.0.0.1 camap.localdomain api.camap.localdomain```
 
 ## Configuration
 
@@ -86,62 +142,10 @@ Pour automatiser la fourniture d'un certificat letsencrypt personnalisé:
 - décommenter les lignes ```traefik.http.routers.nest-loc-camap.tls``` de __docker-compose.yml__
 
 
-## Installation Linux Debian
-
-lancer
-`build_camap_docker.sh <DESTDIR>`
-
-pour une installation de Camap dans ```DESTDIR```
-
-Renseigner le DNS ou votre fichier hosts avec les valeurs correspondante à la configuration.
-Pour une installation en local:
-
-```127.0.0.1 camap.localdomain api.camap.localdomain```
-
-#### Modifier les lignes 3 à 7 de __camap-ts.Dockerfile__ dans $DESTDIR avec les valeurs indiquées dans __.env__
+## Construction des containers
 
 exécuter ```docker compose up -d --build```
 
-## Installation sous Windows
-
-Installer docker desktop
-
-Créer un répertoire Camap
-
-Dans ce répertoire:
-
-- ```git clone https://github.com/CAMAP-APP/camap-hx.git```
-
-- ```git clone https://github.com/CAMAP-APP/camap-ts.git```
-
-- ```git clone https://github.com/CAMAP-APP/camap-docker.git```
-
-
-Copier ensuite depuis camap/camap-docker/:
-
-- ```traefik.yml``` dans ```camap```
-
-- ```*.Dockerfile``` dans ```camap```
-
-- ```docker-compose.yml``` dans ```camap```
-
-- ```.env``` dans ```camap/camap-ts```
-
-- ```config.xml``` dans ```camap/camap-hx```
-
-- le répertoire ```traefik``` et son contenu dans ```camap```
-
-- le répertoire ```ssl``` et son contenu dans ```camap```
-
-
-#### Modifier les lignes 3 à 7 de __camap-ts.Dockerfile__ dans Camap avec les valeurs indiquées dans __camap-ts/.env__
-
-Renseigner le DNS ou votre fichier hosts (c:\windows\system32\drivers\etc) avec les valeurs correspondante à la configuration.
-Pour une installation en local:
-
-```127.0.0.1 camap.localdomain api.camap.localdomain```
-
-exécuter ```docker compose up -d --build```
 
 ## Accès à l'application
 
