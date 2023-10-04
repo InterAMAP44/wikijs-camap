@@ -2,7 +2,7 @@
 title: camap-docker
 description: Installation simplifiée de Camap
 published: true
-date: 2023-10-04T10:12:48.981Z
+date: 2023-10-04T10:13:23.691Z
 tags: 
 editor: markdown
 dateCreated: 2023-09-29T13:53:08.409Z
@@ -146,7 +146,9 @@ exécuter ```docker compose up -d --build```
 ## Accès à l'application
 
 Le dashboard Traefik est accessible via http://127.0.0.1:8080/dashboard/
+
 Après l'installation avec les certificats autosignés, un accès via le navigateur à https://api.camap.localdomain est nécessaire pour passer outre l'avertissement de sécurité, sinon les menus gérés par api.camap ne fonctionneront pas.
+
 Ensuite un premier appel à https://camap.localdomain/install est nécessaire pour initialiser la bdd.
 
 
