@@ -2,7 +2,7 @@
 title: camap-docker
 description: Installation simplifiée de Camap
 published: true
-date: 2023-10-04T10:18:05.437Z
+date: 2023-10-16T13:52:21.966Z
 tags: 
 editor: markdown
 dateCreated: 2023-09-29T13:53:08.409Z
@@ -18,7 +18,7 @@ A noter que la version de production déployée par l'InterAMAP44 diffère, elle
 
 Script de construction des containers Camap
 
-git clone https://github.com/CAMAP-APP/camap-docker.git
+```git clone https://github.com/CAMAP-APP/camap-docker.git```
 
 ## Prérequis
 
