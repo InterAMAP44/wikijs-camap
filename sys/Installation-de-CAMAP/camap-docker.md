@@ -2,7 +2,7 @@
 title: camap-docker
 description: Installation simplifiée de Camap
 published: true
-date: 2023-10-18T14:53:51.340Z
+date: 2023-10-18T14:58:03.214Z
 tags: 
 editor: markdown
 dateCreated: 2023-09-29T13:53:08.409Z
@@ -34,7 +34,7 @@ https://docs.docker.com/engine/install/debian/
 
 _Sur Windows_
 
-Installer [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+Installer [Docker Desktop](https://www.docker.com/products/docker-desktop/) et [Github pour windows](https://windows.github.com/)
 
 
 ## Installation Linux Debian
