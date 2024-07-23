@@ -2,7 +2,7 @@
 title: Gestion des Stocks
 description: 
 published: true
-date: 2024-07-23T12:29:07.131Z
+date: 2024-07-23T13:46:39.015Z
 tags: 
 editor: ckeditor
 dateCreated: 2023-07-21T07:16:21.869Z
@@ -16,10 +16,10 @@ dateCreated: 2023-07-21T07:16:21.869Z
 <p>&nbsp;</p>
 <p>Vous pouvez ensuite définir pour chaque produit un stock disponible qui peut être variable ou fixe par date de distribution.</p>
 <p>Pour cela, dans le sous-menu “Produits” de la gestion de catalogue, vous devez “modifier” &nbsp;les produits concernés pour renseigner les stocks disponibles par date de distribution soit de manière “Global” ou "par distribution”<br>&nbsp;</p>
-<h2>Suivi des stocks “Global”</h2>
-<p>La valeur saisie correspond au stock global disponible pour l'ensemble des dates de distribution du “catalogue”. Cela correspond à un produit stocké comme par exemple le miel:<br>Côté “ producteur” ou “coordinateur”, l'interface de saisie est la suivante:<br>&nbsp;</p>
+<h2>Suivi d'un stock “Global”</h2>
+<p>La valeur saisie correspond à un stock global disponible pour l'ensemble des dates de distribution du “catalogue”. Cela correspond à un produit stocké comme par exemple le miel:<br>Côté “ producteur” ou “coordinateur”, l'interface de saisie est la suivante:<br>&nbsp;</p>
 <figure class="image image-style-align-left"><img src="/gestion_des_stocks_2b.jpeg"></figure>
-<p><i>En tant que producteur je dispose d'un stock de 100 pots de miel d'acacia que je mets dans mon catalogue pour l'ensemble des dates de distribution.</i></p>
+<p><i>En tant que producteur je dispose<u> d'un stock de 100 pots</u> de miel d'acacia que je mets dans mon catalogue pour <u>l'ensemble des dates de distribution</u>.</i></p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
@@ -28,10 +28,10 @@ dateCreated: 2023-07-21T07:16:21.869Z
 <figure class="image image_resized image-style-align-left" style="width:100%;"><img src="/gestion_des_stocks_3.jpeg"></figure>
 <p><i>En tant que membre je visualise le niveau du stock global de manière dynamique: en saisissant ma commande de 8 pots de miel d'acacia sur les 4 dates de distribution, le niveau du stock global du producteur descend à 92 ( 100 - 8 )</i></p>
 <p>&nbsp;</p>
-<h2>Suivi des stocks “par distribution”</h2>
-<p>La valeur saisie correspond au stock disponible identique pour chaque date de distribution du “catalogue”.&nbsp;<br>Côté “ producteur” ou “coordinateur”, l'interface de saisie est la suivante:</p>
+<h2>Suivi d'un stock identique “par distribution”</h2>
+<p>La valeur saisie correspond à un stock disponible identique pour chaque date de distribution du “catalogue”.&nbsp;<br>Côté “ producteur” ou “coordinateur”, l'interface de saisie est la suivante:</p>
 <figure class="image image-style-align-left image_resized" style="width:48.72%;"><img src="/gestion_des_stocks_4.jpeg"></figure>
-<p><i>En tant que producteur je dispose d'un stock de 100 pots de miel d'acacia que je mets à disposition dans mon catalogue pour l'ensemble des 4 dates de distribution, mais la quantité pour chacune des 4 dates de distribution sera une constante de 25 pots</i></p>
+<p><i>En tant que producteur je dispose d'un stock de 100 pots de miel d'acacia que je mets à disposition dans mon catalogue pour <u>l'ensemble des 4 dates de distribution</u>, mais la quantité pour chacune des 4 dates de distribution sera <u>une constante de 25 pots</u></i></p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
@@ -41,6 +41,25 @@ dateCreated: 2023-07-21T07:16:21.869Z
 <p>Côté “membre” l'écran de saisie de la commande est le suivant:</p>
 <figure class="image"><img src="/gestion_des_stocks_5.jpeg"></figure>
 <p><i>En tant que membre je visualise le niveau du stock par date de distribution de manière dynamique: en saisissant ma commande de 8 pots de miel d'acacia sur les 4 dates de distribution, le niveau du stock pour chaque date de distribution descend.</i></p>
+<p>&nbsp;</p>
+<h2>Suivi d'un stock identique à une fréquence régulière “par distribution”</h2>
+<p>La valeur saisie correspond à un stock disponible identique à une fréquence régulière en fonction des dates de distribution du “catalogue”.&nbsp;<br>Côté “ producteur” ou “coordinateur”, l'interface de saisie est la suivante:</p>
+<figure class="image image-style-align-left"><img src="/gestion_des_stocks_6.jpeg"></figure>
+<p><i>En tant que producteur je dispose d'un stock de 100 pots de miel d'acacia que je mets à disposition dans mon catalogue <u>1 fois sur 2</u> à partir <u>du 04 septembre</u>, mais la quantité de mon stock disponible 1 fois sur 2 sera <u>une constante de 50 pots</u>.</i></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Côté “membre” l'écran de saisie de la commande est le suivant:</p>
+<figure class="image"><img src="/gestion_des_stocks_7.jpeg"></figure>
+<p><i>En tant que membre je commande mes 8 pots de miel quand le produit est disponible (1 fois sur 2) en visualisant en dynamique le niveau des stocks.&nbsp;</i></p>
+<h2>Suivi d'un stock identique pendant une période&nbsp;</h2>
+<p>La valeur saisie correspond à un stock disponible identique que sur une ou plusieurs périodes, &nbsp;pour les autres dates de distribution du catalogue le produit n'est pas disponible.<br>Côté “ producteur” ou “coordinateur”, l'interface de saisie est la suivante:</p>
+<figure class="image"><img src="/gestion_des_stocks_8.jpeg"></figure>
+<p><i>En tant que producteur je dispose d'un stock de 100 pots de miel d'acacia que je mets à disposition dans mon catalogue que sur les 2 premières dates de distribution ( le <u>04 septembre et le 04 décembre</u> ) la quantité de mon stock disponible pour ces 2 dates est <u>une constante de 50 pots</u>. Pour les 2 dernières dates mon produit n'est pas disponible.</i></p>
+<figure class="image"><img src="/gestion_des_stocks_9b.jpeg"></figure>
+<p><i>En tant que membre je commande 8 pots de miel pour les 2 premières dates de disponibilité&nbsp;du produit en visualisant en dynamique le niveau de chaque stocks de miel d'acacia pour les autres dates de distribution le produit est indisponible.</i></p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <hr>
