@@ -2,7 +2,7 @@
 title: Gestion des Stocks
 description: 
 published: true
-date: 2024-07-23T14:48:04.719Z
+date: 2024-07-31T11:51:05.457Z
 tags: 
 editor: ckeditor
 dateCreated: 2023-07-21T07:16:21.869Z
@@ -14,9 +14,12 @@ dateCreated: 2023-07-21T07:16:21.869Z
 <p>puis en cochant la case “Gestion des stocks”</p>
 <figure class="image"><img src="/gestion_des_stocks_1.jpeg"></figure>
 <p>&nbsp;</p>
-<p>Vous pouvez ensuite définir pour chaque produit un stock disponible qui peut être variable ou fixe par date de distribution.</p>
-<p>Pour cela, dans le sous-menu “Produits” de la gestion de catalogue, vous devez “modifier” &nbsp;les produits concernés pour renseigner les stocks disponibles par date de distribution soit de manière “Global” ou "par distribution”. Chaque produit du catalogue peut avoir une fréquence de disponibilité différentes. La valeur du stock peut être modifiable pendant toute la durée du contrat du catalogue. <strong><u>Attention</u></strong> la valeur du stock peut être changé à la baisse uniquement si le niveau des commandes est inférieur au stock initial.</p>
-<p><br>&nbsp;</p>
+<p>Vous pouvez ensuite pour chaque produit définir un stock disponible qui peut être:</p>
+<ul>
+  <li>attribué à chaque distribution (stock de 10 produits disponible à chaque distribution)</li>
+  <li>global pour l'ensemble des distributions du catalogue (stock de 10 produit disponible pour l'ensemble des distributions).</li>
+</ul>
+<p>Pour cela, dans le sous-menu “Produits” de la gestion de catalogue, vous devez “modifier” &nbsp;les produits concernés pour renseigner les stocks disponibles par date de distribution soit de manière “Global” ou "par distribution”.&nbsp;<br>Vous pouvez également, pour les produits dont le stock est défini par distribution, définir des “périodes” ou “fréquences" de disponibilité du produit. Cela permet par exemple la configuration de produits disponibles 1 distribution sur 2 (par exemple des pains spéciaux), ou de produits disponible uniquement à certaines périodes (par exemple des coffrets cadeaux pour noël).<br>La valeur du stock peut être modifiée pendant toute la durée du catalogue.&nbsp;<br><strong><u>Attention</u></strong> la valeur du stock peut être modifiée à la baisse mais ne peut pas être fixée à une valeur inférieure aux commandes en cours. Dans un tel cas, vous devrez d'abord annuler des commandes avant de pouvoir baisser le stock.</p>
 <h2>Suivi d'un stock “Global”</h2>
 <p>La valeur saisie correspond à un stock global disponible pour l'ensemble des dates de distribution du “catalogue”. Cela correspond à un produit stocké comme par exemple le miel:<br>Côté “ producteur” ou “coordinateur”, l'interface de saisie est la suivante:<br>&nbsp;</p>
 <figure class="image image-style-align-left"><img src="/gestion_des_stocks_2b.jpeg"></figure>
@@ -32,7 +35,7 @@ dateCreated: 2023-07-21T07:16:21.869Z
 <p>&nbsp;</p>
 <h2>Suivi d'un stock identique “par distribution”</h2>
 <p>La valeur saisie correspond à un stock disponible identique pour chaque date de distribution du “catalogue”.&nbsp;<br>Côté “ producteur” ou “coordinateur”, l'interface de saisie est la suivante:</p>
-<figure class="image image-style-align-left image_resized" style="width:48.72%;"><img src="/gestion_des_stocks_4.jpeg"></figure>
+<figure class="image image_resized image-style-align-left" style="width:48.72%;"><img src="/gestion_des_stocks_4.jpeg"></figure>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p><i>En tant que producteur je dispose d'un stock de 100 pots de miel d'acacia que je mets à disposition dans mon catalogue pour <u>l'ensemble des 4 dates de distribution</u>, mais la quantité pour chacune des 4 dates de distribution sera <u>une constante de 25 pots</u></i></p>
@@ -46,7 +49,7 @@ dateCreated: 2023-07-21T07:16:21.869Z
 <p>&nbsp;</p>
 <h2>Suivi d'un stock identique à une fréquence régulière “par distribution”</h2>
 <p>La valeur saisie correspond à un stock disponible identique à une fréquence régulière en fonction des dates de distribution du “catalogue”.&nbsp;<br>Côté “ producteur” ou “coordinateur”, l'interface de saisie est la suivante:</p>
-<figure class="image image-style-align-left image_resized" style="width:60.72%;"><img src="/gestion_des_stocks_6.jpeg"></figure>
+<figure class="image image_resized image-style-align-left" style="width:60.72%;"><img src="/gestion_des_stocks_6.jpeg"></figure>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p><i>En tant que producteur je dispose d'un stock de 100 pots de miel d'acacia que je mets à disposition dans mon catalogue <u>1 fois sur 2</u> à partir <u>du 04 septembre</u>, mais la quantité de mon stock disponible 1 fois sur 2 sera <u>une constante de 50 pots</u>.</i></p>
