@@ -2,7 +2,7 @@
 title: Gestion des produits
 description: 
 published: true
-date: 2023-09-07T20:44:45.632Z
+date: 2024-09-29T20:24:38.103Z
 tags: 
 editor: ckeditor
 dateCreated: 2023-07-21T07:20:19.817Z
@@ -26,16 +26,13 @@ dateCreated: 2023-07-21T07:20:19.817Z
 <p><strong>Nom</strong> : Le nom du produit, pas trop long</p>
 <p><strong>Référence</strong> : c'est optionnel, mais c'est pratique si vous gérez un gros catalogue de produits, potentiellement via un autre logiciel.</p>
 <p><strong>prix TTC</strong></p>
-<p><strong>description</strong> : quelques mots sur le produit afin d'informer vos adhérents.</p>
-<p><strong>stock</strong> : optionnel, voir <a href="/app/Administration-CAMAP#gestion-des-stocks-en-amap">Gérer des stocks de produits</a></p>
-<p><strong>type</strong> : Si vous n'avez pas de photo, vous pouvez choisir une icône</p>
+<p><strong>description</strong> : quelques mots sur le produit afin d'informer les souscripteurs du contrat.</p>
+<p><strong>stock</strong> : optionnel, voir <a href="https://wiki.amap44.org/fr/app/admin-gestion-stock">https://wiki.amap44.org/fr/app/admin-gestion-stock</a></p>
 <p><strong>TVA</strong> : Choisissez un taux de TVA, en France les produits alimentaires sont vendus à un taux de 5,5% en général. Attention certains produits alimentaires peuvent avoir un taux de TVA à 20% (consultez votre producteur ou référez vous au site <a href="https://entreprendre.service-public.fr/vosdroits/F22399">service-public.fr</a>).</p>
 <h3><strong>Photos</strong></h3>
 <p>Une fois votre liste de produits constituée vous pouvez ajouter des photos à ces produits.</p>
 <p>Cliquez sur le bouton “photo” de chaque produit et vous pourrez importer une photo.</p>
 <p>Soyez patients quand vous valider votre envoi de photo, cela peut prendre quelques secondes car le logiciel va “retailler” l'image pour un affichage optimal. Un format d'image carré est recommandé.</p>
-<h3><strong>Stocks</strong></h3>
-<p>Consultez la page dédiée: <a href="/app/admin-gestion-stock">Gestion des stocks</a></p>
 <h1><strong>Vente au kilo, produits à peser</strong></h1>
 <p>Certains produits n'ont pas de prix fixe et fonctionnent selon une logique de prix au Kilo.</p>
 <p><strong>La vente “comme au marché”</strong> : on commande 1 poulet, mais son poids, et donc son prix peuvent varier selon la pesée. Il en va de même avec le fromage à la coupe, ou les caissettes de viande.</p>
@@ -50,25 +47,25 @@ dateCreated: 2023-07-21T07:20:19.817Z
 </ul>
 <p>Par exemple :</p>
 <ul>
-  <li>“Poulet”</li>
+  <li>“Pintade”</li>
   <li>Kg</li>
-  <li>1,4</li>
-  <li>14 €</li>
+  <li>1,6</li>
+  <li>15.50 €</li>
 </ul>
-<p>Pour un poulet qui pèse environ 1,4Kg vendu 14€ TTC.</p>
-<p>Vous noterez que Camap déduit le prix au kilo à partir de ces indications.</p>
+<p>Pour un poulet qui pèse environ 1,6Kg vendu 15,50€ TTC.</p>
+<p>Vous noterez que CAMAP déduit le prix au kilo à partir de ces indications.</p>
 <h2><strong>Options de produit à cocher</strong></h2>
 <h3><strong>Option "Prix variable selon pesée" (uniquement contrat Variable)</strong></h3>
 <p>Cette option va afficher une icône “balance” et indiquer aux adhérents que ce produit sera pesé à la distribution et que son prix sera ajusté à ce moment là.</p>
 <figure class="image"><img src="https://wiki.cagette.net/_media/admin:prixvariableselonpesee.png?w=600&amp;tok=dfdc50" alt=""></figure>
-<p>Cette option va également permettre de mettre à jour la commande d'un adhérent en fonction du poids du produit : aller dans Catalogues / bouton Gérer de votre catalogue / Commandes / choisir date de commande / bouton “modifier”</p>
+<p>Cette option va également permettre de mettre à jour la commande d'un membre en fonction du poids du produit : aller dans Catalogues / bouton Gérer de votre catalogue / Commandes / choisir date de commande / bouton “modifier”</p>
 <figure class="image"><img src="https://wiki.cagette.net/_media/admin:smartqt.png" alt=""></figure>
 <h3><strong>Option "multi-pesée"</strong></h3>
-<p>Par défaut, Camap agrège les produits sur une seule ligne quand le même produit est commandé plusieurs fois. Par exemple : “ 2 x poulet poids moyen ”.&nbsp;<br>Mais <strong>dans le cas d'un contrat AMAP variable</strong> volailles le coordinateur où le producteur est amené à modifier le poids réel de chaque poulet après la distribution, il faut activer cette option, sinon il faudra modifier la somme des poids des 2 poulets. &nbsp;</p>
+<p>Par défaut, CAMAP agrège les produits sur une seule ligne quand le même produit est commandé plusieurs fois. Par exemple : “ 2 x poulet poids moyen ”.&nbsp;<br>Mais <strong>dans le cas d'un contrat AMAP variable</strong> volailles le coordinateur où le producteur est amené à modifier le poids réel de chaque poulet après la distribution, il faut activer cette option, sinon il faudra modifier la somme des poids des 2 poulets. &nbsp;</p>
 <p>Dans le cas d'un <strong>contrat AMAP Classique</strong>, cette option permet d'avoir une ligne de commande par unité de vente. Par exemple pour de Pain d'épices:</p>
 <ul>
-  <li>si multipesée est décoché, Camap affichera <u>une</u> commande de 2x Pain d'épices</li>
-  <li>si multipesée est coché, Camap affichera <u>deux</u> commandes de 1x Pain d'épices</li>
+  <li>si multipesée est décoché, CAMAP affichera <u>une</u> commande de 2x Pain d'épices</li>
+  <li>si multipesée est coché, CAMAP affichera <u>deux</u> commandes de 1x Pain d'épices</li>
 </ul>
 <p>&nbsp;</p>
 <h3><strong>Option "Vrac" (uniquement contrat Variable)</strong></h3>
