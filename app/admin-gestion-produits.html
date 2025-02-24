@@ -2,13 +2,18 @@
 title: Gestion des produits
 description: 
 published: true
-date: 2024-10-06T13:59:19.680Z
+date: 2025-02-24T10:48:22.369Z
 tags: 
 editor: ckeditor
 dateCreated: 2023-07-21T07:20:19.817Z
 -->
 
 <h1><strong>Gestion des produits</strong></h1>
+<h2><strong>Importer / Exporter une liste de produits</strong></h2>
+<p>Cette fonctionnalité est très utile quand un producteur possède déjà ses produits dans un autre groupe CAMAP et qu'il souhaite les importer dans un nouveau groupe CAMAP</p>
+<p>1 - Avec les droits admin donnés au producteur, il doit extraire un fichier &nbsp;“export CSV” &nbsp;de ses produits de son “catalogue” dans son ancien groupe CAMAP.</p>
+<p>2 - Avec les droits admin donnés au producteur sur le nouveau groupe CAMAP, &nbsp;il importe son fichier des produits avec la fonction &nbsp;“import CSV”.</p>
+<p>3 - Malheureusement l'import de photos n'est pas automatisable pour le moment, il faut importer les photos des produits une par une.</p>
 <h2><strong>Créer de nouveaux produits</strong></h2>
 <p>Lorsque vous créez un nouveau catalogue, il faut saisir les produits qui seront disponibles dans ce catalogue. La liste de produits est rattachée à ce catalogue uniquement. Si la liste de produits change trop souvent, il peut être plus pratique de créer un nouveau catalogue qui aura sa nouvelle liste de produits.</p>
 <p>Pour créer vos nouveaux produits, vous avez deux options :</p>
@@ -16,12 +21,10 @@ dateCreated: 2023-07-21T07:20:19.817Z
   <li>Faire une importation à partir d'un tableur (<i>Excel, Libre Office</i>)</li>
   <li>Saisir manuellement les produits</li>
 </ul>
-<h3><strong>Importation tableur</strong></h3>
-<p>Aller dans “catalogues”, puis “produits”, puis “import CSV” en bas de page.</p>
-<p>Télécharger le fichier de démonstration afin de bien repérer dans quel ordre sont les colonnes.</p>
-<p>Modifiez votre fichier selon ce modèle, vérifiez bien les paramètres à l'export CSV et vous pourrez importer vos produits d'un seul coup.</p>
-<p>Malheureusement l'import de photos n'est pas automatisable, il faut envoyer les photos des produits une par une.</p>
-<h3><strong>Saisie manuelle</strong></h3>
+<p>Autrement si le producteur possède une trop grand nombre de produits, il est conseillé de télécharger le fichier de démonstration afin de bien repérer dans quel ordre sont les colonnes.</p>
+<p>Modifiez votre fichier selon ce modèle, enregistrer le fichier CSV avec les mêmes paramètres et vous pourrez importer vos produits d'un seul coup. C'est surtout vrai si vous êtes dans plusieurs groupes CAMAP.</p>
+<h3>&nbsp;</h3>
+<h2><strong>Saisie manuelle d'un nouveau produit</strong></h2>
 <p>Vous pouvez également saisir les produits manuellement en cliquant sur “nouveau produit” dans la page produits d'un catalogue.</p>
 <p><strong>Nom</strong> : Le nom du produit, pas trop long</p>
 <p><strong>Référence</strong> : c'est optionnel, mais c'est pratique si vous gérez un gros catalogue de produits, potentiellement via un autre logiciel.</p>
@@ -29,7 +32,7 @@ dateCreated: 2023-07-21T07:20:19.817Z
 <p><strong>description</strong> : quelques mots sur le produit afin d'informer les souscripteurs du contrat.</p>
 <p><strong>stock</strong> : optionnel, voir <a href="/app/admin-gestion-stock">la page wiki gestion des stocks</a></p>
 <p><strong>TVA</strong> : Choisissez un taux de TVA, en France les produits alimentaires sont vendus à un taux de 5,5% en général. Attention certains produits alimentaires peuvent avoir un taux de TVA à 20% (consultez votre producteur ou référez vous au site <a href="https://entreprendre.service-public.fr/vosdroits/F22399">service-public.fr</a>).</p>
-<h3><strong>Photos</strong></h3>
+<h2><strong>Photos (vignette) de vos produits</strong></h2>
 <p>Une fois votre liste de produits constituée vous pouvez ajouter des photos à ces produits.</p>
 <p>Cliquez sur le bouton “photo” de chaque produit et vous pourrez importer une photo.</p>
 <p>Soyez patients quand vous valider votre envoi de photo, cela peut prendre quelques secondes car le logiciel va “retailler” l'image pour un affichage optimal. Un format d'image carré est recommandé.</p>
