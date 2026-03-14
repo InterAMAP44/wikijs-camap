@@ -2,24 +2,24 @@
 title: Gestion des Stocks
 description: 
 published: true
-date: 2026-03-14T09:08:39.507Z
+date: 2026-03-14T09:11:35.930Z
 tags: 
-editor: ckeditor
+editor: code
 dateCreated: 2023-07-21T07:16:21.869Z
 -->
 
-<h1>Gestion des stocks</h1>
+<h1 id="gestion-des-stocks" class="toc-header"> Gestion des stocks</h1>
 <p>Pour les producteurs de produits stockés, CAMAP propose 4 solutions pour gérer les stocks en fonction du type de contrat (Classique ou variable)</p>
 <figure class="image"><img src="/documentation_camap_stock.png"></figure>
 <p>&nbsp;</p>
-<h1>Vidéo pour comprendre la gestion des stocks</h1>
+<h1 id="vidéo-pour-comprendre-la-gestion-des-stocks" class="toc-header"> Vidéo pour comprendre la gestion des stocks</h1>
 <p>&nbsp;</p>
 <figure class="media">
-  <oembed url="https://youtu.be/4OfEUp6J-fs"></oembed>
+  
 </figure>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<h1><strong>Gestion des Stocks</strong></h1>
+<h1 id="gestion-des-stocks-1" class="toc-header"> <strong>Gestion des Stocks</strong></h1>
 <p>La gestion des stocks permet de limiter le nombre maximum de produits commandés par date de distribution tout en laissant vos utilisateurs saisir leurs commandes.<br>Pour utiliser la gestion des stocks, il faut l'activer dans les paramètres du <mark class="marker-yellow">“catalogue”</mark> concerné en utilisant le sous-menu <mark class="marker-yellow">“Modifier le catalogue”&nbsp;</mark></p>
 <p>puis en cochant la case <mark class="marker-yellow">“Gestion des stocks”</mark></p>
 <figure class="image"><img src="/gestion_des_stocks_1.jpeg"></figure>
@@ -27,7 +27,7 @@ dateCreated: 2023-07-21T07:16:21.869Z
 <p>Vous pouvez ensuite pour chaque produit définir un stock disponible de 2 manières soit <strong>“global” </strong>soit<strong> “par distribution”</strong></p>
 <p>La valeur du stock peut être modifiée pendant toute la durée du catalogue.&nbsp;<br><strong><u>Attention</u></strong> la valeur du stock peut être modifiée à la baisse mais ne peut pas être fixée à une valeur inférieure aux commandes en cours. Dans un tel cas, vous devrez d'abord annuler des commandes avant de pouvoir baisser le stock.<br><br>Il y a deux options de gestion des stocks, une gestion globale et une gestion par distribution.<br>Dans le cas d'une gestion globale, le stock est unique et partagé pour <u>toutes</u> les dates de distribution du catalogue.<br>Dans le cas d'une gestion par distribution, le stock que je renseigne est un stock disponible à <u>chaque</u> date de distribution du catalogue<br>Des options sont possible dans le cas d'une gestion par distribution, permettant de définir une fréquence de disponibilité du produit (1 distribution sur 2 par exemple) ou des périodes de disponibilité du produit (de date à date)</p>
 <p>&nbsp;</p>
-<h2>Suivi “Global” des stocks</h2>
+<h2 id="suivi-global-des-stocks" class="toc-header"> Suivi “Global” des stocks</h2>
 <p>La valeur saisie correspond à un stock global disponible pour l'ensemble des dates de distribution du “catalogue”. Cela correspond à un produit stocké comme par exemple le miel:<br>Côté “ producteur” ou “coordinateur”, l'interface de saisie est la suivante:<br>&nbsp;</p>
 <figure class="image"><img src="/gestion_des_stocks_2b.jpeg"></figure>
 <p><i>En tant que producteur je dispose<u> d'un stock de 100 pots</u> de miel d'acacia que je mets dans mon catalogue pour <u>l'ensemble des dates de distribution</u>.</i></p>
@@ -35,9 +35,9 @@ dateCreated: 2023-07-21T07:16:21.869Z
 <figure class="image image_resized image-style-align-left" style="width:100%;"><img src="/gestion_des_stocks_3.jpeg"></figure>
 <p><i>En tant que membre je visualise le niveau du stock global de manière dynamique: en saisissant ma commande de 8 pots de miel d'acacia sur les 4 dates de distribution, le niveau du stock global du producteur descend à 92 (100 - 8)</i></p>
 <p>&nbsp;</p>
-<h2>Suivi des stocks “Par distribution”</h2>
+<h2 id="suivi-des-stocks-par-distribution" class="toc-header"> Suivi des stocks “Par distribution”</h2>
 <p>&nbsp;</p>
-<h3>Stock identique à chaque distribution</h3>
+<h3 id="stock-identique-à-chaque-distribution" class="toc-header"> Stock identique à chaque distribution</h3>
 <p>La valeur saisie correspond à un stock disponible identique pour chaque date de distribution du “catalogue”.&nbsp;<br>Côté “ producteur” ou “coordinateur”, l'interface de saisie est la suivante:</p>
 <figure class="image image_resized" style="width:48.72%;"><img src="/gestion_des_stocks_4.jpeg"></figure>
 <p><i>En tant que producteur je dispose d'un stock de 100 pots de miel d'acacia que je mets à disposition dans mon catalogue pour <u>l'ensemble des 4 dates de distribution</u>, mais la quantité pour chacune des 4 dates de distribution sera <u>une constante de 25 pots</u></i></p>
@@ -45,7 +45,7 @@ dateCreated: 2023-07-21T07:16:21.869Z
 <figure class="image"><img src="/gestion_des_stocks_5.jpeg"></figure>
 <p><i>En tant que membre <u>je commande 8 pots de miel</u> en quantité variable sur les 4 dates de distribution, en visualisant en dynamique le niveau des stocks restants par date de distribution.</i></p>
 <p>&nbsp;</p>
-<h3>Stock disponible à fréquence régulière</h3>
+<h3 id="stock-disponible-à-fréquence-régulière" class="toc-header"> Stock disponible à fréquence régulière</h3>
 <p>La valeur saisie correspond à un stock disponible identique à une fréquence régulière en fonction des dates de distribution du “catalogue”.&nbsp;<br>Côté “ producteur” ou “coordinateur”, l'interface de saisie est la suivante:</p>
 <figure class="image image_resized" style="width:60.72%;"><img src="/gestion_des_stocks_6.jpeg"></figure>
 <p><i>En tant que producteur je dispose d'un stock de 100 pots de miel d'acacia que je mets à disposition dans mon catalogue <u>1 distribution (à laquelle je participe) sur 2</u> à partir <u>du 04 septembre</u>, la quantité de mon stock disponible pour chacune de ces distributions sera <u>une constante de 50 pots</u>.</i></p>
@@ -53,7 +53,7 @@ dateCreated: 2023-07-21T07:16:21.869Z
 <figure class="image"><img src="/gestion_des_stocks_7.jpeg"></figure>
 <p><i>En tant que membre <u>je commande mes 8 pots</u> de miel quand le produit est disponible (1 fois sur 2) en visualisant en dynamique le niveau des stocks restants.</i></p>
 <p>&nbsp;</p>
-<h2>Stock disponible par période&nbsp;</h2>
+<h2 id="stock-disponible-par-période" class="toc-header"> Stock disponible par période&nbsp;</h2>
 <p>La valeur saisie correspond à un stock disponible pour les distributions auxquelles je participe d'une ou plusieurs périodes de temps (intervalle de dates). &nbsp;Pour les autres dates de distribution du catalogue auxquelles je participe, le produit n'est pas disponible.<br>Côté “ producteur” ou “coordinateur”, l'interface de saisie est la suivante:</p>
 <figure class="image"><img src="/gestion_des_stocks_8.jpeg"></figure>
 <p><i>En tant que producteur je dispose d'un stock de 100 pots de miel d'acacia que je mets à disposition dans mon catalogue sur la période du 2 septembre au 4 septembre. Sur cette période où je ne participe qu'à 2 dates de distribution ( le <u>04 septembre et le 04 décembre</u> ) la quantité de mon stock disponible à chaque distribution est <u>une constante de 50 pots</u>. Pour les autres dates (les 2 dernières dates) mon produit n'est pas disponible.</i></p>
@@ -61,7 +61,7 @@ dateCreated: 2023-07-21T07:16:21.869Z
 <figure class="image"><img src="/gestion_des_stocks_9b.jpeg"></figure>
 <p><i>En tant que membre <u>je commande 8 pots de miel</u> pour les 2 premières dates de disponibilité&nbsp;du produit en visualisant en dynamique le niveau des stocks restants. Pour les autres dates de distribution le produit est indisponible.</i></p>
 <p>&nbsp;</p>
-<h2><i>Visualisation globale du niveau des commandes/stocks par produit et par date de distribution</i></h2>
+<h2 id="visualisation-globale-du-niveau-des-commandesstocks-par-produit-et-par-date-de-distribution" class="toc-header"> <i>Visualisation globale du niveau des commandes/stocks par produit et par date de distribution</i></h2>
 <p>Pour cela, dans le sous-menu “<strong>Stock”</strong> de la gestion de catalogue, vous pouvez visualiser de manière globale le niveau des commandes et des stocks par date de distribution et par produit.</p>
 <figure class="image"><img src="/gestion_des_stocks_10_bis.jpeg"></figure>
 <p>&nbsp;</p>
@@ -69,5 +69,5 @@ dateCreated: 2023-07-21T07:16:21.869Z
 <p>&nbsp;</p>
 <hr>
 <figure class="image image_resized" style="width:8.36%;"><img src="/by-nc-sa.png"></figure>
-<p><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/&quot;">&nbsp;Licence Creative Commons Attribution - Pas d’Utilisation Commerciale - Partage dans les Mêmes Conditions 4.0 International</a></p>
+<p><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/&quot;" class="is-external-link" target="_blank" rel="noreferrer">&nbsp;Licence Creative Commons Attribution - Pas d’Utilisation Commerciale - Partage dans les Mêmes Conditions 4.0 International</a></p>
 <p>&nbsp;</p>
